@@ -1,0 +1,29 @@
+.planet {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    text-align: center;
+    color: #DFDFDE;
+  }
+  
+  .planet h2 {
+    font-size: 2rem;
+    color: #DFDFDE;
+  }
+  
+  .planet h3 {
+    color: #8D8DAA;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+ .planet img {
+   width: 100%;
+   height: auto;
+   margin-top: -200px;
+ }
+    
+     
+ 
