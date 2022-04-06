@@ -11,9 +11,16 @@ section {
   max-width: 40rem;
   text-align: center;
   background-color: #DFDFDE;
-  padding: .3rem;
+  padding: .1rem;
   border-radius: 12px;
 }
+
+@media (min-width: 600px) {
+  section {
+    padding: 1rem;
+  }
+}
+
 
 button {
   font: inherit;
