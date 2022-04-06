@@ -1,3 +1,5 @@
+This site is currently deployed @ https://danicodes01.github.io/nasa/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

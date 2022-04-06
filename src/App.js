@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
 import SpaceList from './components/SpaceList'
