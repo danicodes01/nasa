@@ -38,7 +38,6 @@ const App = () => {
     searchPlanets()
   }, [searchPlanets])
 
-  // console.log('QUESTIONS',questions)
   return (
     <div className='App'>
       <section>
