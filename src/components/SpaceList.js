@@ -1,6 +1,7 @@
 import React from 'react'
 import Planet from './Planet'
 import styles from './SpaceList.module.css'
+
 const SpaceList = ({planets}) => {
   return (
       <ul className={styles['space-list']}>
