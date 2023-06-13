@@ -7,8 +7,10 @@ const App = () => {
   const [planets, setPlanets] = useState([])
 
   const searchPlanets = useCallback(async () => {
+
     let apiKey = process.env.REACT_APP_NASA_API_KEY
-    let url = `https://api.nasa.gov/planetary/apod${apiKey}`
+    console.log('hello', apiKey)
+    let url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
     
     try {
       const response = await axios.get(url)
