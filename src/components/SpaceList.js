@@ -4,7 +4,6 @@ import styles from './SpaceList.module.css'
 
 const SpaceList = ({planets}) => {
     const year = new Date().getFullYear()
-    console.log(year)
     return (
         <ul className={styles['space-list']}>
           {planets.map(p => (
