@@ -1,22 +1,23 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import './App.css'
 import axios from 'axios'
-import SpaceList from './components/SpaceList'
+import SpaceList from './components/Planets'
 import Header from './components/Header'
+import Planet from './models/planet'
+
 const App = () => {
-  const [planets, setPlanets] = useState([])
+  const [planets, setPlanets] = useState<Planet[]>([])
 
   const searchPlanets = useCallback(async () => {
 
     let apiKey = process.env.REACT_APP_NASA_API_KEY
-    console.log('hello', apiKey)
     let url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
     
     try {
       const response = await axios.get(url)
       const data = await response.data
 
-      let refactorData = []
+      let refactorData: Planet[] = []
 
       for (let k in data) {
         refactorData.push({
@@ -32,7 +33,7 @@ const App = () => {
 
       setPlanets(refactorData)
     } catch (error) {
-      // console.log(error)
+      console.log(error)
     }
   }, [])
 
@@ -44,7 +45,7 @@ const App = () => {
     <div className='App'>
       <section>
         <Header />
-        <SpaceList planets={planets} />
+        <SpaceList items={planets} />
       
         <div style={{ fontWeight: 'lighter', fontSize: '10px' }}>
           {process.env.REACT_APP_ME}

@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
-import styles from './Planet.module.css'
+import styles from './PlanetItem.module.css'
 
-const Planet = ({ title, url, date, description, media}) => {
+const PlanetItem: React.FC<{title: string, url: string, date: string, description: string, media: string }> = ({ title, url, date, description}) => {
     
   return (
     <div>
@@ -23,4 +23,4 @@ const Planet = ({ title, url, date, description, media}) => {
   )
 }
 
-export default Planet
+export default PlanetItem
