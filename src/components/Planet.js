@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/youtube'
 import styles from './Planet.module.css'
 
 const Planet = ({ title, url, date, description, media}) => {
@@ -11,8 +11,10 @@ const Planet = ({ title, url, date, description, media}) => {
         <h3>{date}</h3>
         <p>{description}</p>
         <div>
-        <ReactPlayer url={url} loop={true} width='510px' height='230px'/>
+        <ReactPlayer url={url} loop={false} width='510px' height='230px'/>
+        {!url.includes('youtube') &&
         <img src={url}/>
+        }
         </div>
         </li>
     </div>
