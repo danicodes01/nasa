@@ -11,7 +11,6 @@ const App = () => {
   const searchPlanets = useCallback(async () => {
 
     let apiKey = process.env.REACT_APP_NASA_API_KEY
-    console.log(apiKey)
     let url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
     
     try {
