@@ -11,7 +11,7 @@ const PlanetItem: React.FC<{title: string, url: string, date: string, descriptio
         <h3>{date}</h3>
         <p>{description}</p>
         <div>
-        <ReactPlayer url={url} loop={false} width='510px' height='230px'/>
+        <ReactPlayer url={url} loop={false} width='75%' height='230px'/>
         {!url.includes('youtube') &&
         <img src={url}/>
         }

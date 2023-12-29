@@ -26,10 +26,11 @@ section {
 
 button {
   font: inherit;
+  margin-left: 10px ;
   cursor: pointer;
-  background: #230052;
-  border: 1px solid #230052;
-  color: white;
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
   padding: 0.75rem 2rem;
   border-radius: 20px;
 }
@@ -40,8 +41,9 @@ button:focus {
 
 button:hover,
 button:active {
-  background-color: black;
-  border-color: black;
+  background-color: transparent;
+  border-color: transparent;
+  opacity: .60;
 }
 /* .App-logo {
   height: 40vmin;
